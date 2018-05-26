@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/aboutus"
+        android:title="About Us"
+        android:icon="@drawable/ic_baseline_people_24px"></item>
+    <item android:id="@+id/synergy"
+        android:title="Synergy"
+        android:icon="@drawable/ic_outline_highlight_24px"></item>
+    <item android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/ic_baseline_event_note_24px"></item>
+    <item android:id="@+id/gallery"
+        android:title="Gallery"
+        android:icon="@drawable/ic_baseline_image_24px"></item>
+    <item android:id="@+id/faqs"
+        android:title="FAQs"
+        android:icon="@drawable/ic_baseline_help_24px"></item>
+    <item android:id="@+id/contactus"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_baseline_call_24px"></item>
+
+</menu>
