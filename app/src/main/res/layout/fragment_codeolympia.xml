@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="ambika.android.com.first_page.Codeolympia">
+
+
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/slidedots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pager"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:background="@drawable/background">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/images"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background">
+
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/images"
+                android:orientation="vertical">
+
+                <pl.hypeapp.materialtimelineview.MaterialTimelineView
+                    android:id="@+id/material_timeline_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@android:color/holo_orange_light"
+                    app:timeline_bottom_radio_color="@android:color/white"
+                    app:timeline_line_color="@android:color/white"
+                    app:timeline_margin_start="32dp"
+                    app:timeline_position="first"
+                    app:timeline_radio_outline_radius="20"
+                    app:timeline_radio_radius="12"
+                    app:timeline_top_radio_color="@android:color/white"
+                    app:timeline_type="item">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HELLO WORLD"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+                <pl.hypeapp.materialtimelineview.MaterialTimelineView
+                    android:id="@+id/material_timeline_viewline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/background"
+                    app:timeline_bottom_radio_color="@android:color/white"
+                    app:timeline_line_color="@android:color/background_dark"
+                    app:timeline_margin_start="32dp"
+                    app:timeline_position="middle"
+                    app:timeline_radio_outline_radius="20"
+                    app:timeline_radio_radius="12"
+                    app:timeline_top_radio_color="@android:color/white"
+                    app:timeline_type="line"
+                    >
+
+
+                </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+                <pl.hypeapp.materialtimelineview.MaterialTimelineView
+                    android:id="@+id/material_timeline_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@android:color/holo_orange_light"
+                    app:timeline_bottom_radio_color="@android:color/background_light"
+                    app:timeline_line_color="@android:color/background_light"
+                    app:timeline_margin_start="32dp"
+                    app:timeline_position="middle"
+                    app:timeline_radio_outline_radius="20"
+                    app:timeline_radio_radius="12"
+                    app:timeline_top_radio_color="@android:color/white"
+                    app:timeline_type="item"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HELLO WORLD"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

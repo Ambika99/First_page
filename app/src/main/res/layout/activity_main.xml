@@ -5,7 +5,10 @@
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    >
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/drawer"
@@ -16,20 +19,34 @@
         app:itemBackground="@color/white"
         app:itemIconTint="@color/gray"
         app:itemTextColor="@color/gray"
-        app:menu="@menu/drawermenu"
-        >
-
+        app:menu="@menu/drawermenu">
     </android.support.design.widget.NavigationView>
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="300dp">
 
-    </android.support.v4.view.ViewPager>
-    <me.relex.circleindicator.CircleIndicator
-        android:id="@+id/indicator"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:id="@+id/fragment">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background">
+
+        </android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background" />
+
+
+
+    </FrameLayout>
+
 
 
 </android.support.v4.widget.DrawerLayout>
